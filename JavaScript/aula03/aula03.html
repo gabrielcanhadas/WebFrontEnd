@@ -15,12 +15,17 @@
 <body>
     <!-- Div que serve como cabeçalho da aplicação. A classe 'header' aplica os estilos de fundo e layout -->
     <div class="header">
+
         <!-- Título principal da lista de tarefas -->
         <h2>Lista de tarefas</h2>
         <!-- Campo de entrada de texto para a nova tarefa. O ID 'tarefa' é usado pelo JavaScript para obter o valor -->
         <input type="text" id="tarefa" placeholder="Informe a tarefa">
         <!-- Botão 'Incluir'. O evento 'onclick' chama a função JavaScript 'addElemento()' para adicionar a tarefa à lista -->
-        <span onclick="addElemento()" class="addBtn">Incluir</span>
+
+        <section>
+            <span onclick="addElemento()" class="addBtn">Incluir</span>
+            <span onclick="limparLista()" class="addBtn">Limpar Lista</span>
+        </section>
     </div>
     <!-- Lista não ordenada (ul) que contém todos os itens de tarefa. O ID 'itemLista' é usado pelo JavaScript para manipular a lista -->
     <ul id="itemLista">

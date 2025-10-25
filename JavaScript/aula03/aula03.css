@@ -122,8 +122,8 @@ input {
 .addBtn {
     padding: 10px;
     /* Adiciona preenchimento interno */
-    width: 25%;
-    /* Ocupa os 25% restantes da largura do contêiner */
+    width: 10%;
+    /* Ocupa os 10% restantes da largura do contêiner */
     background: #d9d9d9;
     /* Cor de fundo cinza */
     color: #555;
