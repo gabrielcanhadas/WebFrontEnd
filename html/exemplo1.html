@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- Link para o arquivo CSS externo -->
+   <link rel="stylesheet" href="../css/estilos.css" />
+   <title>Exemplo 1 - Tag Semantica</title>
+</head>
+
+<body>
+   <header>
+      <h1 id="cabecalho">
+         <img class="icone" src="../icones/ods.png" alt="Meu Ícone" />
+         Objetivos de Desenvolvimento Sustentável
+         <img class="icone" src="../icones/configuracoes.png" alt="Config" />
+      </h1>
+   </header>
+   <nav>
+      <a href="https://www.pactoglobal.org.br/ods" title="Pacto Global - Rede Brasil" target="_blank">Pacto Global</a>
+      |
+      <a href="https://brasil.un.org/pt-br/sdgs" title="Site oficial da ONU" target="_blank">Link da ONU</a>
+      |
+      <a href="../documentos/CP_Calendario_RESUMIDO_2025.pdf" title="Calendario 2025" target="_blank">Calendário
+         2025</a>
+      | <a href="#footer">Link para o rodapé(footer)</a> |
+      <!-- o # cria uma ancora(um link para a mesma página). Veja a linha 75 -->
+      <span style="color: #000000">&#x0040;</span>
+      <!-- exibe o símbolo @ (Unicode 0040) -->
+      <!-- a tag span não exibe um arquivo de imagem diretamente. Ela exibe texto ou caracteres Unicode -->
+      <a href="mailto:gabriel@utfpr.edu.br" id="contato">Contato</a>
+   </nav>
+   <section>
+      <h2 class="titulo">Objetivos de Desenvolvimento Sustentável (ODS)</h2>
+      <p>
+         Os Objetivos de Desenvolvimento Sustentável são um apelo global à
+         ação para acabar com a pobreza, proteger o meio ambiente e o clima e
+         garantir que as pessoas, em todos os lugares, possam desfrutar de
+         paz e de prosperidade.
+      </p>
+
+      <ol>
+         <li>Erradicação da pobreza</li>
+         <li>Fome zero e agricultura sustentável</li>
+         <li>Saúde e Bem-estar</li>
+      </ol>
+
+      <ul>
+         <li>Erradicação da pobreza</li>
+         <li>Fome zero e agricultura sustentável</li>
+         <li>Saúde e Bem-estar</li>
+      </ul>
+
+      <dl>
+         <dt>Erradicação da pobreza</dt>
+         <dd>
+            - Até 2030, erradicar a pobreza extrema para todas as pessoas em
+            todos os lugares, atualmente medida como pessoas vivendo com
+            menos de US$ 1,90 por dia
+         </dd>
+         <dd>
+            - Até 2030, reduzir pelo menos à metade a proporção de homens,
+            mulheres e crianças, de todas as idades, que vivem na pobreza, em
+            todas as suas dimensões, de acordo com as definições nacionais
+         </dd>
+         <dt>Fome zero e agricultura sustentável</dt>
+         <dd>
+            - Até 2030, acabar com a fome e garantir o acesso de todas as
+            pessoas, em particular os pobres e pessoas em situações
+            vulneráveis, incluindo crianças, a alimentos seguros, nutritivos
+            e suficientes durante todo o ano
+         </dd>
+         <dd>
+            - Até 2030, acabar com todas as formas de desnutrição, incluindo
+            atingir, até 2025, as metas acordadas internacionalmente sobre
+            nanismo e caquexia em crianças menores de cinco anos de idade, e
+            atender às necessidades nutricionais dos adolescentes, mulheres
+            grávidas e lactantes e pessoas idosas
+         </dd>
+      </dl>
+   </section>
+   <article>
+      <h2 class="titulo">
+         Como as Nações Unidas apoiam os Objetivos de Desenvolvimento
+         Sustentável no Brasil
+      </h2>
+      <p>
+         A ONU e seus parceiros no Brasil estão trabalhando para atingir os
+         Objetivos de Desenvolvimento Sustentável. São 17 objetivos
+         ambiciosos e interconectados que abordam os principais desafios de
+         desenvolvimento enfrentados por pessoas no Brasil e no mundo.
+      </p>
+   </article>
+   <hr />
+   <!-- insere uma linha de separação -->
+
+   <footer id="footer">
+      <p>2023</p>
+      <p>
+         <img class="icone" src="/icones/page_footer.png" alt="footer icone" /> ícones no rodapé (footer) da página
+         <img class="icone" src="/icones/page_footer.png" alt="footer icone" />
+      </p>
+      <!-- a linha anterior exibe um texto entre dois ícones. O arquivo com o ícone está em uma pasta local -->
+
+   </footer>
+   <script src="../js/link_email.js" defer></script>
+</body>
+
+</html>

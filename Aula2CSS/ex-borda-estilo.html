@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+    <title>Exemplo borda-estilo</title>
+</head>
+
+<body>
+    <h2>Exemplo de bordas</h2>
+    <p class="dotted_semcor">Borda pontilhada.</p>
+    <p class="dashed_semcor">Borda tracejada.</p>
+    <p class="solid_semcor">Borda sólida.</p>
+    <p class="double_semcor">Borda dupla.</p>
+    <p class="hidden_semcor">Borda oculta.</p>
+    <p class="mix_semcor">Bordas mistas.</p>
+    <br>
+    <h4>Código CSS utilizado:</h4>
+    <pre><code class="language-css">
+.dotted_semcor {
+    border-style: dotted;
+}
+
+.dashed_semcor {
+    border-style: dashed;
+}
+
+.solid_semcor {
+    border-style: solid;
+}
+
+.double_semcor {
+    border-style: double;
+}
+
+.hidden_semcor {
+    border-style: hidden;
+}
+
+.mix_semcor {
+    border-style: dotted dashed solid double;
+}
+</code></pre>
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-css.min.js"></script>
+
+</body>
+
+</html>

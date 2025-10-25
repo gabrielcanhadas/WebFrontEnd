@@ -1,0 +1,18 @@
+/* Seletor de elemento - afeta todos os <p> */
+p {
+    font-size: 18px;
+    color: black;
+}
+
+/* Classe - pode ser usada em vários elementos */
+.destaque {
+    color: blue;
+    font-weight: bold;
+}
+
+/* ID - único, aplicado só a um elemento */
+#especial {
+    color: red;
+    font-size: 22px;
+    text-decoration: underline;
+}

@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    /* muda de linha para coluna */
+}
+
+.item {
+    background: lightblue;
+    padding: 20px;
+}

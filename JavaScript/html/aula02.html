@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos - JavaScript</title>
+</head>
+
+<body>
+    <main>
+        <section id="inicio">
+            <img id="ods-img" src="https://pactoglobal.org.br/wp-content/themes/pacto-global/storage/ods/March2019/3Yv
+X29fWOMMJeUt0rDZK.png" alt="Logo da ODS 1">
+        </section>
+        <section>
+            <h1>Objetivos de Desenvolvimento Sustentável</h1>
+            <p id="desc">Em 2015, a ONU propôs aos seus países membros uma nova agenda de
+                desenvolvimento sustentável para os próximos 15 anos, a Agenda 2030, composta pelos 17
+                Objetivos de Desenvolvimento Sustentável (ODS). </p>
+            <h2>Conheça mais</h2>
+            <p>Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar
+                com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os
+                lugares, possam desfrutar de paz e de prosperidade.</p>
+        </section>
+        <section>
+            <button onclick="mudarCor('red');">Alterar cor</button>
+        </section>
+    </main>
+    <script type="text/javascript">
+        Permissions-Policy: unload=*;
+        var textos = document.getElementsByTagName("p");
+        console.log(textos);
+        var primeiroParagrafo = textos[0];
+        console.log(primeiroParagrafo);
+    </script>
+</body>
+
+</html>

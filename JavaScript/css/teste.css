@@ -1,0 +1,11 @@
+p {
+    display: left;
+    align-items: center;
+}
+
+img {
+    float: inline-end;
+    width: 80px;
+    height: 80px;
+    margin: 0 10px 0 0;
+}

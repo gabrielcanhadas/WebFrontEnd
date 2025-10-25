@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Marca d'água com imagem */
+body::before {
+  content: "";
+  position: fixed;
+  /* Fixa na tela */
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  /* Ajuste do tamanho da imagem */
+  height: 800px;
+  background: url("../imagens/arquivo.jpg") no-repeat center;
+  background-size: contain;
+  opacity: 0.1;
+  /* Transparência da marca */
+  transform: translate(-50%, -50%) rotate(0deg);
+  z-index: 9999;
+  pointer-events: none;
+  /* Não atrapalha cliques */
+}
+
+.conteudo {
+  padding: 2rem;
+}

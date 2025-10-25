@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content:space-around;
+    /* eixo principal */
+    align-items: center;
+    /* eixo cruzado */
+    height: 100vh;
+}
+
+.item {
+    background: lightblue;
+    padding: 20px;
+}

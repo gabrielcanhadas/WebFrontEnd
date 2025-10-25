@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Define a codificação de caracteres para UTF-8, essencial para suportar caracteres especiais e acentuação -->
+    <meta charset="UTF-8">
+    <!-- Configura a viewport para responsividade, garantindo que o site se adapte bem a diferentes tamanhos de tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título exibido na aba do navegador e nos resultados de busca -->
+    <title>Lista de tarefas</title>
+    <!-- Linka o arquivo de estilos CSS externo (aula03.css) para aplicar o design à página -->
+    <link rel="stylesheet" type="text/css" href="aula03.css">
+</head>
+
+<body>
+    <!-- Div que serve como cabeçalho da aplicação. A classe 'header' aplica os estilos de fundo e layout -->
+    <div class="header">
+        <!-- Título principal da lista de tarefas -->
+        <h2>Lista de tarefas</h2>
+        <!-- Campo de entrada de texto para a nova tarefa. O ID 'tarefa' é usado pelo JavaScript para obter o valor -->
+        <input type="text" id="tarefa" placeholder="Informe a tarefa">
+        <!-- Botão 'Incluir'. O evento 'onclick' chama a função JavaScript 'addElemento()' para adicionar a tarefa à lista -->
+        <span onclick="addElemento()" class="addBtn">Incluir</span>
+    </div>
+    <!-- Lista não ordenada (ul) que contém todos os itens de tarefa. O ID 'itemLista' é usado pelo JavaScript para manipular a lista -->
+    <ul id="itemLista">
+        <!-- Item de exemplo com a classe 'checked', indicando que está concluído por padrão (estilo riscado) -->
+        <li class="checked">Tomar café</li>
+        <!-- Item de exemplo normal -->
+        <li>Fazer compras</li>
+        <!-- Item de exemplo normal -->
+        <li>Entregar atividade no moodle</li>
+    </ul>
+    <!-- Carrega o arquivo JavaScript (aula03.js). É carregado no final do body para garantir que todos os elementos HTML estejam disponíveis antes da execução do script -->
+    <script src="aula03.js"></script>
+</body>
+
+</html>

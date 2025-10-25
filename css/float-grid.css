@@ -1,0 +1,12 @@
+p {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+

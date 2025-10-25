@@ -1,0 +1,40 @@
+#conteudo {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    border-right: 4px solid #667eea;
+    margin-bottom: 20px;
+    min-height: 100px;
+    line-height: 1.8;
+}
+
+#novotexto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #7c0a0a;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Define a animação de piscar */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Aplica a animação ao elemento com a classe .texto-piscando */
+.texto-piscando {
+    animation: blink 1s linear infinite;
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
+}

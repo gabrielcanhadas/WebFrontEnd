@@ -1,0 +1,128 @@
+#cabecalho {
+  background-color: rgba(5, 248, 223, 0.1);
+  text-align: center;
+}
+
+#image_login {
+  object-position: right bottom;
+  object-fit: contain;
+  background-color: #f7f7cf;
+  width: 100px;
+  height: 50px;
+}
+
+a#contato.visited {
+  color: rgb(247, 6, 38);
+}
+
+.login-button {
+  background-color: #046fe2;
+  /* Exemplo de cor azul */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* Mostra que é clicável */
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+  /* Cor mais escura ao passar o mouse */
+}
+
+.titulo {
+  color: rgb(20, 14, 1);
+  font-size: 25px;
+  text-align: center;
+}
+
+.icone {
+
+  vertical-align: middle;
+}
+
+.icone-favorito {
+  color: gold;
+  font-size: 20px;
+}
+
+.icone-concluido {
+  color: green;
+  font-size: 20px;
+}
+
+.telefone {
+  color: #ff0202;
+}
+
+.palavra {
+  font-weight: bold;
+  color: #ff0202;
+}
+
+.copyright-unicode {
+  color: rgb(89, 255, 0);
+}
+
+img.icone-img {
+  width: 20px;
+  vertical-align: middle;
+}
+
+a:link {
+  color: blue;
+}
+
+/* links não visitados */
+a:visited {
+  color: rgb(247, 6, 38);
+}
+
+/* links visitados */
+a:hover {
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(166, 234, 19);
+}
+
+/* user hovers */
+a:active {
+  color: rgb(38, 255, 0);
+}
+
+/* links ativos */
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 2px solid #060606;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+}
+
+li,
+dd {
+  font-style: italic;
+}
+
+dt {
+  font-weight: bold;
+}

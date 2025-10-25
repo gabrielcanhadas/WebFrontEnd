@@ -1,0 +1,29 @@
+aula03.js: 
+ - Modificar a função addElemento() para transformar o texto da nova tarefa em maiúsculas.
+ - Modificar a função addElemento() e o bloco de inicialização para incluir a data atual 
+   (dia, mês e ano) antes do texto da tarefa.
+ - Criar a função JavaScript para limpar todos os itens da lista.
+
+aula03.html: 
+ - Adicionar um botão "Limpar Lista" no cabeçalho.
+
+aula03.css: 
+ - Adicionar estilos para o novo botão "Limpar Lista".
+
+Transformar em Maiúsculo e Incluir Data (JS):
+---------------------------------------------
+- Uma nova função getFormattedDate() foi adicionada ao aula03.js para obter a data atual no formato [DD/MM/AAAA].
+- A função addElemento() agora utiliza inputValue.toUpperCase() e concatena a data antes de criar o nó de texto da tarefa.
+- O bloco de inicialização do aula03.js foi modificado para adicionar a data às tarefas iniciais do HTML.
+
+Adicionar Botão "Limpar Lista" (HTML, CSS e JS):
+------------------------------------------------
+aula03.html: 
+ - O botão <span onclick="limparLista()" class="limparBtn">Limpar Lista</span> foi adicionado ao <div class="header">.
+
+aula03.css: 
+ - Estilos para o novo botão (.limparBtn) foram adicionados, e as larguras dos botões e do campo de input foram 
+   ajustadas para acomodar o novo elemento (75% input, 12.5% Incluir, 12.5% Limpar).
+
+aula03.js: 
+ - A função limparLista() foi criada, que solicita confirmação ao usuário e limpa o conteúdo da lista (ul.innerHTML = '').

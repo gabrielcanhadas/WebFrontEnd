@@ -1,0 +1,149 @@
+/* Estilos globais que se aplicam a toda a página */
+body {
+    margin: 0;
+    /* Remove a margem padrão do body para que o conteúdo ocupe toda a tela */
+    min-width: 250px;
+    /* Garante uma largura mínima para a página, melhorando a usabilidade em telas pequenas */
+}
+
+/* O seletor universal (*) aplica o box-sizing border-box a todos os elementos */
+* {
+    box-sizing: border-box;
+    /* Faz com que padding e border sejam incluídos no cálculo da largura e altura total do elemento */
+}
+
+/* Estilos para a lista não ordenada (ul) que conterá as tarefas */
+ul {
+    margin: 0;
+    /* Remove a margem externa padrão da lista */
+    padding: 0;
+    /* Remove o preenchimento interno padrão da lista, para um controle mais preciso */
+}
+
+/* Estilos para cada item (li) da lista de tarefas */
+ul li {
+    cursor: pointer;
+    /* Muda o cursor para uma mão ao passar sobre um item, indicando que é clicável */
+    position: relative;
+    /* Define o posicionamento relativo para que elementos filhos (como o botão 'fechar') possam ser posicionados absolutamente em relação a ele */
+    padding: 12px 8px 12px 40px;
+    /* Define o preenchimento interno: 12px superior, 8px direito, 12px inferior, 40px esquerdo (para dar espaço ao marcador) */
+    background: #eee;
+    /* Define uma cor de fundo cinza claro para os itens */
+    font-size: 18px;
+    /* Define o tamanho da fonte do texto do item */
+    transition: 0.2s;
+    /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+
+/* Efeito zebrado: aplica um fundo diferente para itens ímpares (1º, 3º, 5º, etc.) para melhorar a legibilidade */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+    /* Cor de fundo um pouco mais clara para os itens ímpares */
+}
+
+/* Efeito hover: muda o fundo do item da lista quando o mouse está sobre ele */
+ul li:hover {
+    background: #ddd;
+    /* Escurece ligeiramente o fundo para dar feedback visual ao usuário */
+}
+
+/* Estilo para tarefas concluídas (classe 'checked' é adicionada via JavaScript) */
+ul li.checked {
+    background: #888;
+    /* Cor de fundo cinza escuro para indicar que a tarefa foi concluída */
+    color: #fff;
+    /* Cor do texto branca para contrastar com o fundo escuro */
+    text-decoration: line-through;
+    /* Adiciona um risco no meio do texto para reforçar o status de concluído */
+}
+
+/* Estilos para o botão 'fechar' (o 'x' para remover um item) */
+.close {
+    position: absolute;
+    /* Posicionamento absoluto em relação ao seu pai (o item da lista 'li') */
+    right: 0;
+    /* Alinha o botão à direita do item */
+    top: 0;
+    /* Alinha o botão ao topo do item */
+    padding: 12px 16px;
+    /* Define o preenchimento para aumentar a área clicável do botão */
+}
+
+/* Efeito hover para o botão 'fechar' */
+.close:hover {
+    background-color: blueviolet;
+    /* Muda a cor de fundo para a cor principal da aplicação */
+    color: white;
+    /* Muda a cor do 'x' para branco para garantir a legibilidade */
+}
+
+/* Estilos para o cabeçalho da aplicação */
+.header {
+    background-color: blueviolet;
+    /* Define a cor de fundo principal da aplicação */
+    padding: 30px 40px;
+    /* Adiciona preenchimento interno para dar espaço ao conteúdo */
+    color: white;
+    /* Define a cor do texto do cabeçalho como branca */
+    text-align: center;
+    /* Centraliza o texto e os elementos internos */
+}
+
+/* Técnica de clearfix: Garante que o cabeçalho se expanda para conter os elementos flutuantes (input e addBtn) */
+.header:after {
+    content: "";
+    /* Gera um pseudo-elemento vazio */
+    display: table;
+    /* Faz com que o pseudo-elemento se comporte como uma tabela */
+    clear: both;
+    /* Limpa a flutuação dos elementos anteriores, forçando o contêiner (header) a se ajustar à altura deles */
+}
+
+/* Estilos para o campo de entrada (input) onde o usuário digita a nova tarefa */
+input {
+    margin: 0;
+    /* Remove margens externas */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 0;
+    /* Remove o arredondamento dos cantos */
+    width: 75%;
+    /* Ocupa 75% da largura do contêiner (header) */
+    padding: 10px;
+    /* Adiciona preenchimento interno para o texto */
+    float: left;
+    /* Flutua à esquerda para permitir que o botão fique ao seu lado */
+    font-size: 16px;
+    /* Define o tamanho da fonte do texto digitado */
+}
+
+/* Estilos para o botão 'Incluir' que adiciona uma nova tarefa */
+.addBtn {
+    padding: 10px;
+    /* Adiciona preenchimento interno */
+    width: 25%;
+    /* Ocupa os 25% restantes da largura do contêiner */
+    background: #d9d9d9;
+    /* Cor de fundo cinza */
+    color: #555;
+    /* Cor do texto cinza escuro */
+    float: left;
+    /* Flutua à esquerda para se alinhar ao lado do campo de input */
+    text-align: center;
+    /* Centraliza o texto do botão */
+    font-size: 16px;
+    /* Define o tamanho da fonte */
+    cursor: pointer;
+    /* Muda o cursor para uma mão para indicar que é clicável */
+    transition: 0.3s;
+    /* Adiciona uma transição suave para o efeito hover */
+    border-radius: 0;
+    /* Remove o arredondamento dos cantos */
+}
+
+/* Efeito hover para o botão 'Incluir' */
+.addBtn:hover {
+    background-color: #bbb;
+    /* Escurece ligeiramente o botão ao passar o mouse */
+}

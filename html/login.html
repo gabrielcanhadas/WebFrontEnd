@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Login</title>
+</head>
+
+<!-- A <fieldset> é uma tag usada para agrupar elementos relacionados dentro de um formulário. 
+     Ela é muito útil quando você quer organizar visualmente campos de um formulário, 
+     como por exemplo dados pessoais, endereço, preferências, etc.
+     Ela cria uma borda em volta do grupo de campos por padrão, tornando o formulário mais legível. -->
+
+<body>
+   <form>
+      <fieldset style="width: 200px">
+         <label for="username">Usuário:</label><br />
+         <input type="text" id="username" name="username" placeholder="não utilize acento" required /><br />
+
+         <label for="pwd">Senha:</label><br />
+         <input type="password" id="pwd" name="pwd" required />
+         <br />
+         <br /><!--quebra de linha-->
+         <input type="submit" value="Enviar" />
+      </fieldset>
+
+      <br /><!--quebra de linha-->
+
+      <label for="conteudo">Conteúdo de maior interesse:</label><br />
+      <select name="select_conteudo" id="conteudo">
+         <option value="" disabled selected>Selecione um conteúdo...</option>
+         <option value="javascript">JavaScript</option>
+         <option value="html">HTML</option>
+         <option value="css">CSS</option>
+         <option value="java">Java</option>
+      </select>
+
+      <br /><br /><!--quebra de linha-->
+
+      <fieldset style="width: 200px">
+         <legend>Selecione uma opção:</legend>
+
+         <label for="op1">
+            <input type="radio" id="op1" name="opcao" value="1" /> Opção 01 </label><br />
+
+         <label for="op2">
+            <input type="radio" id="op2" name="opcao" value="2" /> Opção 02 </label><br />
+
+         <label for="op3">
+            <input type="radio" id="op3" name="opcao" value="3" /> Opção 03 </label><br />
+
+         <label for="op4">
+            <input type="radio" id="op4" name="opcao" value="4" /> Opção 04 </label><br />
+
+         <label for="op5">
+            <input type="radio" id="op5" name="opcao" value="5" /> Opção 05
+         </label>
+      </fieldset>
+
+      <br />
+
+      <label for="email">E-mail:</label>
+      <input type="email" required /> <br />
+
+      <label for="usuario">Nome de usuário </label>
+      <input type="text" id="usuario" name="usuario" required minlength="4" maxlength="12" />
+      <br />
+
+      <label for="cep">CEP </label>
+      <input type="text" id="cep" name="cep" pattern="\d{5}-\d{3}" placeholder="00000-000" required />
+      <br />
+   </form>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+/* Estilo geral da página */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+/* O palco onde o jogo acontece */
+#palco {
+    position: relative;
+    /* ESSENCIAL! Torna-se a referência para o posicionamento do jogador */
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    /* Centraliza o palco */
+    border: 3px solid #333;
+    background-color: #fff;
+    overflow: hidden;
+    /* Garante que o jogador não saia para fora das bordas */
+}
+
+/* Nosso jogador (o quadrado) */
+#jogador {
+    position: absolute;
+    /* ESSENCIAL! Permite mover o elemento com 'top' e 'left' */
+    width: 50px;
+    height: 50px;
+    background-color: dodgerblue;
+
+    /* Posição inicial do jogador */
+    top: 175px;
+    /* (400/2) - (50/2) -> Centralizado verticalmente */
+    left: 275px;
+    /* (600/2) - (50/2) -> Centralizado horizontalmente */
+
+    /* Transição suave para o movimento */
+    transition: top 0.1s linear, left 0.1s linear;
+}
